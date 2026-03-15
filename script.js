@@ -1,6 +1,12 @@
 // ── GSAP REGISTER ──
 gsap.registerPlugin(ScrollTrigger);
 
+// Bypass loader for SEO (Googlebot)
+if (navigator.userAgent.includes("Googlebot")) {
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.display = "none";
+}
+
 // ── LOADER ──
 (function () {
     const loader = document.getElementById('loader');
