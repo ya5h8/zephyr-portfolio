@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Yash Gawande — AI & Data Science</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,6 +50,13 @@
     <!-- NAV -->
     <nav id="nav">
         <a href="#hero" class="n-logo">YG<span>.</span></a>
+        
+        <!-- Hamburger Menu Toggle -->
+        <button id="menu-toggle" class="menu-btn" aria-label="Open Menu">
+            <span class="m-line"></span>
+            <span class="m-line"></span>
+        </button>
+
         <ul class="n-links">
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
@@ -60,6 +67,27 @@
             <li><a href="#resume">resume</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="m-overlay">
+            <div class="m-overlay-links">
+                <a href="#about" class="m-link">001 / About</a>
+                <a href="#education" class="m-link">002 / Education</a>
+                <a href="#experience" class="m-link">003 / Experience</a>
+                <a href="#skills" class="m-link">004 / Skills</a>
+                <a href="#projects" class="m-link">005 / Projects</a>
+                <a href="#achievements" class="m-link">006 / Achievements</a>
+                <a href="#resume" class="m-link">007 / Resume</a>
+                <a href="#contact" class="m-link">008 / Contact</a>
+            </div>
+            <div class="m-overlay-info">
+                <p>Available for new opportunities</p>
+                <div class="m-socials">
+                    <a href="https://linkedin.com/in/yash-g-4b0785229" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/ya5h8" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -585,6 +613,25 @@
         });
     </script>
 
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mOverlay = document.getElementById('m-overlay');
+        const mLinks = document.querySelectorAll('.m-link');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
+
+        mLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mOverlay.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    </script>
 </body>
 
 </html>
