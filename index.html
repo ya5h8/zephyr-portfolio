@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yash Gawande — AI & Data Science</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="ld-logo">
+            <div class="ld-ring"></div>
+            <div class="ld-ring2"></div>
+            <div class="ld-circle">
+                <span class="ld-initials">YG</span>
+            </div>
+        </div>
+        <div class="ld-dots">
+            <div class="ld-dot"></div>
+            <div class="ld-dot"></div>
+            <div class="ld-dot"></div>
+        </div>
+        <button id="ld-start">START</button>
+        <div id="ld-bar-wrap">
+            <div id="ld-bar-fill"></div>
+        </div>
+        <div id="ld-pct">00%</div>
+    </div>
+
+    <!-- CURSOR & PROGRESS -->
+    <div id="dot"></div>
+    <div id="prog"></div>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="#hero" class="n-logo">YG<span>.</span></a>
+        <ul class="n-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">edu</a></li>
+            <li><a href="#experience">exp</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#achievements">wins</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <canvas id="threeC"></canvas>
+        <div class="h-inner">
+            <div class="h-eyebrow">AI &amp; Data Science — Amravati, IN</div>
+            <div class="h-name">
+                <span class="h-name-line"><span class="mask-wrap"><span
+                            class="h-name-word mask-inner">HELLO</span></span></span>
+                <span class="h-name-line"><span class="mask-wrap"><span
+                            class="h-name-word mask-inner outline">WORLD</span></span><span class="mask-wrap"><span
+                            class="h-name-word mask-inner red">,</span></span></span>
+                <span class="h-name-line"><span class="mask-wrap"><span class="h-name-word mask-inner"
+                            style="font-size:.52em;font-weight:300;color:var(--mid)">I'm Yash.</span></span></span>
+            </div>
+            <p class="h-role">Full-Stack Dev / <b>AI Enthusiast</b> / Builder</p>
+            <div class="h-btns">
+                <a href="#projects" class="btn-blk">See My Work</a>
+                <a href="#contact" class="btn-out">Get In Touch</a>
+            </div>
+        </div>
+        <div class="h-corner">
+            <p><span class="blink">◆</span> Open To Work</p>
+            <p>B.Tech — AI &amp; DS</p>
+            <p>CGPA 8.35 / 10</p>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-hint-line"></div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="t-track">
+            <span class="t-item r">★</span><span class="t-item">React</span>
+            <span class="t-item r">★</span><span class="t-item">Node.js</span>
+            <span class="t-item r">★</span><span class="t-item">Python</span>
+            <span class="t-item r">★</span><span class="t-item">Kotlin</span>
+            <span class="t-item r">★</span><span class="t-item">Gemini API</span>
+            <span class="t-item r">★</span><span class="t-item">MySQL</span>
+            <span class="t-item r">★</span><span class="t-item">MongoDB</span>
+            <span class="t-item r">★</span><span class="t-item">Firebase</span>
+            <span class="t-item r">★</span><span class="t-item">Next.js</span>
+            <span class="t-item r">★</span><span class="t-item">ML Kit</span>
+            <span class="t-item r">★</span><span class="t-item">GSAP</span>
+            <span class="t-item r">★</span><span class="t-item">Three.js</span>
+            <!-- Seamless Loop -->
+            <span class="t-item r">★</span><span class="t-item">React</span>
+            <span class="t-item r">★</span><span class="t-item">Node.js</span>
+            <span class="t-item r">★</span><span class="t-item">Python</span>
+            <span class="t-item r">★</span><span class="t-item">Kotlin</span>
+            <span class="t-item r">★</span><span class="t-item">Gemini API</span>
+            <span class="t-item r">★</span><span class="t-item">MySQL</span>
+            <span class="t-item r">★</span><span class="t-item">MongoDB</span>
+            <span class="t-item r">★</span><span class="t-item">Firebase</span>
+            <span class="t-item r">★</span><span class="t-item">Next.js</span>
+            <span class="t-item r">★</span><span class="t-item">ML Kit</span>
+            <span class="t-item r">★</span><span class="t-item">GSAP</span>
+            <span class="t-item r">★</span><span class="t-item">Three.js</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="s-wrap">
+        <div class="s-label">001 / About</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">Who</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">I
+                        Am.</span></span></span>
+        </div>
+        <div class="about-grid">
+            <div class="geo-wrap" data-scroll-reveal>
+                <div class="geo-label">geo.sketch — v2.0</div>
+                <img src="assets/yashimage.png" class="geo-profile" alt="Yash Gawande" loading="lazy">
+                <canvas id="geo-canvas"></canvas>
+                <div class="geo-stamp">AI &amp; DS / PRPCEM</div>
+            </div>
+            <div class="about-text" data-scroll-reveal>
+                <p>I'm a <strong>third-year B.Tech student</strong> studying AI &amp; Data Science at P.R. Pote Patil
+                    College, Amravati. I like building things that are actually useful — not just demos.</p>
+                <p>My work lives at the intersection of <strong>software engineering and machine intelligence</strong>.
+                    I've shipped a production e-commerce platform, built an Android health app using Gemini, and messed
+                    around with Linux kernels when I get bored.</p>
+                <p>Right now I'm deep into <span class="hl">full-stack development</span>, learning more about NLP, and
+                    looking for places where I can contribute and grow fast.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="s-wrap">
+        <div class="s-label">002 / Education</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">Where
+                        I</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">Studied.</span></span></span>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card" data-scroll-reveal>
+                <div class="edu-yr">2024 — 2027 </div>
+                <div class="edu-deg">B.Tech — AI &amp; Data Science</div>
+                <div class="edu-inst">P. R. Pote Patil College of Engineering<br>&amp; Management, Amravati</div>
+                <div class="edu-meta">CGPA: <b>8.35 / 10</b></div>
+                <div class="edu-badge">Currently Pursuing</div>
+            </div>
+            <div class="edu-card" data-scroll-reveal>
+                <div class="edu-yr">Completed June 2024</div>
+                <div class="edu-deg">Diploma — Computer Engineering</div>
+                <div class="edu-inst">Dr. Panjabrao Deshmukh<br>Polytechnic, Amravati</div>
+                <div class="edu-meta">Score: <b>84.00%</b></div>
+                <div class="edu-badge">Completed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="s-wrap">
+        <div class="s-label">003 / Experience</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">Where
+                        I've</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">Been.</span></span></span>
+        </div>
+        <div class="exp-rows">
+            <div class="exp-row" data-scroll-reveal>
+                <div class="exp-date">Jun 2023<br>— Jul 2023</div>
+                <div class="exp-body">
+                    <h3>Intern</h3>
+                    <h4>Compilers Technologies · Amravati</h4>
+                    <ul>
+                        <li>Advanced Java hands-on training — Swing, JDBC, Servlets, JSP</li>
+                        <li>Built database-driven desktop applications using JDBC</li>
+                        <li>First exposure to a real client-facing development workflow</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-row" data-scroll-reveal>
+                <div class="exp-date">Nov 2025<br>— <span class="now">Present</span></div>
+                <div class="exp-body">
+                    <h3>Freelance Web Developer</h3>
+                    <h4>apnashop.shop · Self-employed</h4>
+                    <ul>
+                        <li>Built full e-commerce platform using React (Vite), Node.js, MySQL from scratch</li>
+                        <li>Firebase for User Authentication &amp; JWT for Secure Admin Dashboard</li>
+                        <li>REST API architecture for product management, cart, and orders</li>
+                        <li>Cloudinary CDN integration for optimized product media delivery</li>
+                        <li>Shiprocket API for automated checkout, shipping &amp; real-time tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Horizontal Scroll Text -->
+<div class="h-scroll-wrap">
+    <div class="h-scroll-track" id="hst">
+        <span class="h-scroll-item dark">FULL STACK</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">AI / ML</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item dark">ANDROID</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">OPEN SOURCE</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item dark">FULL STACK</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">AI / ML</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item dark">ANDROID</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">OPEN SOURCE</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item dark">FULL STACK</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">AI / ML</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item dark">ANDROID</span>
+        <span class="h-scroll-item outline">·</span>
+        <span class="h-scroll-item">OPEN SOURCE</span>
+        <span class="h-scroll-item outline">·</span>
+    </div>
+</div>
+
+    <!-- SKILLS -->
+    <section id="skills" class="s-wrap">
+        <div class="s-label">004 / Skills</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">What</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">I
+                        Use.</span></span></span>
+        </div>
+        <div class="sk-table" data-scroll-reveal>
+            <div class="sk-row">
+                <div class="sk-cat">Languages</div>
+                <div class="sk-pills">
+                    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" loading="lazy" alt="Java">Java</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/python" loading="lazy" alt="Python">Python</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/javascript" loading="lazy" alt="JavaScript">JavaScript</span>
+                </div>
+            </div>
+            <div class="sk-row">
+                <div class="sk-cat">Frontend</div>
+                <div class="sk-pills">
+                    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" loading="lazy" alt="HTML">HTML</span>
+                    <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" loading="lazy" alt="CSS">CSS</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/react" loading="lazy" alt="React">React</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/tailwindcss" loading="lazy" alt="Tailwind">Tailwind</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/greensock" loading="lazy" alt="GSAP">GSAP</span>
+                </div>
+            </div>
+            <div class="sk-row">
+                <div class="sk-cat">Backend</div>
+                <div class="sk-pills">
+                    <span class="pill"><img src="https://cdn.simpleicons.org/nodedotjs" loading="lazy" alt="Node.js">Node.js</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/firebase" loading="lazy" alt="Firebase">Firebase</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/postman" loading="lazy" alt="REST APIs">REST APIs</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/jsonwebtokens/white" loading="lazy" alt="JWT">JWT</span>
+                </div>
+            </div>
+            <div class="sk-row">
+                <div class="sk-cat">Databases</div>
+                <div class="sk-pills">
+                    <span class="pill"><img src="https://cdn.simpleicons.org/mysql" loading="lazy"
+                            alt="MySQL">MySQL</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/mongodb" loading="lazy"
+                            alt="MongoDB">MongoDB</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/datagrip" loading="lazy"
+                            alt="JDBC">JDBC</span>
+                </div>
+            </div>
+            <div class="sk-row">
+                <div class="sk-cat">Tools</div>
+                <div class="sk-pills">
+                    <span class="pill"><img src="https://cdn.simpleicons.org/vite" loading="lazy" alt="Vite">Vite</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/git" loading="lazy" alt="Git">Git</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/github/white" loading="lazy" alt="GitHub">GitHub</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/postman" loading="lazy" alt="Postman">Postman</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/googlecolab" loading="lazy" alt="Google Colab">Google Colab</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/linux/white" loading="lazy" alt="Linux">Linux</span>
+                    <span class="pill"><img src="https://cdn.simpleicons.org/cloudinary" loading="lazy" alt="Cloudinary">Cloudinary</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="s-wrap">
+        <div class="s-label">005 / Projects</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">Things</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">I
+                        Built.</span></span></span>
+        </div>
+        <div class="proj-grid">
+            <div class="pj span2" data-scroll-reveal>
+                <div class="pj-n">01 — Featured</div>
+                <div class="pj-title">APNASHOP.SHOP</div>
+                <div class="pj-sub">Full-Stack E-commerce Platform</div>
+                <p class="pj-desc">Production e-commerce platform — Firebase auth, Cloudinary CDN, Shiprocket delivery
+                    tracking. Real users, real orders, actually live.</p>
+                <div class="pj-foot">
+                    <div class="pj-tags">
+                        <span class="p-tag">Next.js</span><span class="p-tag">Node.js</span>
+                        <span class="p-tag">MySQL</span><span class="p-tag">Firebase</span>
+                        <span class="p-tag">Cloudinary</span>
+                    </div>
+                    <a href="https://apnashop.shop" target="_blank" class="pj-link">Visit <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="pj" data-scroll-reveal>
+                <div class="pj-n">02</div>
+                <div class="pj-title">MEDIROOTS</div>
+                <div class="pj-sub">Smart Healthcare Assistant</div>
+                <p class="pj-desc">Voice Android app — Gemini API + ML Kit OCR for prescription scanning and AI health
+                    coaching. Focused on elderly users.</p>
+                <div class="pj-foot">
+                    <div class="pj-tags"><span class="p-tag">Kotlin</span><span class="p-tag">ML Kit</span><span
+                            class="p-tag">Gemini</span></div>
+                    <a href="https://github.com/ya5h8/MediRoot" target="_blank" class="pj-link">GitHub <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="pj" data-scroll-reveal>
+                <div class="pj-n">03</div>
+                <div class="pj-title">RAILBHOOMI</div>
+                <div class="pj-sub">AI Railway Helpdesk</div>
+                <p class="pj-desc">Multilingual complaint system for Indian Railways — NLP auto-categorization and smart
+                    routing. Won DevThon 2025.</p>
+                <div class="pj-foot">
+                    <div class="pj-tags"><span class="p-tag">MERN</span><span class="p-tag">NLP</span><span
+                            class="p-tag">Bootstrap</span></div>
+                    <a href="https://github.com/ya5h8/railway-helpdesk" target="_blank" class="pj-link">GitHub <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="pj span2" data-scroll-reveal>
+                <div class="pj-n">04</div>
+                <div class="pj-title">BLOOD DONOR</div>
+                <div class="pj-sub">Donor Finding Platform</div>
+                <p class="pj-desc">Real-time platform connecting blood donors and recipients — urgency tracking,
+                    blood-group search, availability management. Smart Hackathon 2024 finalist.</p>
+                <div class="pj-foot">
+                    <div class="pj-tags"><span class="p-tag">PHP</span><span class="p-tag">MySQL</span><span
+                            class="p-tag">JavaScript</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="s-wrap">
+        <div class="s-label">006 / Achievements</div>
+        <div class="s-title">
+            <span class="s-title-line"><span class="mask-wrap"><span
+                        class="s-title-word mask-inner">Things</span></span></span>
+            <span class="s-title-line"><span class="mask-wrap"><span class="s-title-word mask-inner">I
+                        Won.</span></span></span>
+        </div>
+        <div class="ach-list">
+            <div class="ach-item" data-scroll-reveal>
+                <div class="ach-num">01</div>
+                <div class="ach-inner">
+                    <div>
+                        <div class="ach-title">DevThon 2025 — 1st Place</div>
+                        <p class="ach-body">Secured 1st place at a state-level hackathon for RailBhoomi, an AI-powered
+                            Railway Complaint Management System with NLP classification.</p>
+                    </div>
+                    <div class="ach-badge">State Level · Winner</div>
+                </div>
+            </div>
+            <div class="ach-item" data-scroll-reveal>
+                <div class="ach-num">02</div>
+                <div class="ach-inner">
+                    <div>
+                        <div class="ach-title">Smart Hackathon 2024 — Finalist</div>
+                        <p class="ach-body">Presented the Blood Donor Finding System at SGBAU Research &amp; Incubation
+                            Foundation — real-time donor-recipient platform.</p>
+                    </div>
+                    <div class="ach-badge">SGBAU · Finalist</div>
+                </div>
+            </div>
+            <div class="ach-item" data-scroll-reveal>
+                <div class="ach-num">03</div>
+                <div class="ach-inner">
+                    <div>
+                        <div class="ach-title">Google Solution Challenge 2024</div>
+                        <p class="ach-body">Built MediRoots — a voice-enabled AI healthcare assistant for prescription
+                            scanning and health coaching as part of Google's global challenge.</p>
+                    </div>
+                    <div class="ach-badge">Google · Participant</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="s-wrap">
+        <div class="s-label">007 / Contact</div>
+        <div class="contact-grid">
+            <div class="contact-left" data-scroll-reveal>
+                <div class="contact-head-flex">
+                    <h2>LET'S<br>WORK<br><span class="stroke">TOGETHER.</span></h2>
+                    <!-- Integrated Note -->
+                    <div class="sticker-wrap">
+                        <div class="msg-box">
+                            <div class="msg-label">// a note for you</div>
+                            <div id="typed-out"><span class="caret"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="c-info">
+                    <li><i class="bi bi-geo-alt"></i>Amravati, Maharashtra, India</li>
+                    <li><a href="mailto:yashgawande47@gmail.com"><i
+                                class="bi bi-envelope"></i>yashgawande47@gmail.com</a></li>
+                    <li><a href="tel:+919510103408"><i class="bi bi-telephone"></i>+91 95101 03408</a></li>
+                </ul>
+                <div class="soc-row">
+                    <a href="https://github.com/ya5h8" target="_blank" class="soc"><i
+                            class="bi bi-github"></i>GitHub</a>
+                    <a href="https://linkedin.com/in/yashgawande" target="_blank" class="soc"><i
+                            class="bi bi-linkedin"></i>LinkedIn</a>
+                    <a href="https://x.com/ya5hgawande" target="_blank" class="soc"><i class="bi bi-twitter-x"></i>X</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <p>© 2025 Yash Gawande</p>
+            <p>Designed &amp; built by Yash Gawande</p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Formspree Formbutton -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        /* customize formbutton below*/
+        formbutton("create", {
+            action: "https://formspree.io/f/xwvrqzbn",
+            title: "Send me a messag",
+            fields: [
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                },
+                { type: "submit" }
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "#c8f53e",
+                    color: "#0e0e0c"
+                },
+                button: {
+                    backgroundColor: "#c8f53e",
+                    color: "#0e0e0c"
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

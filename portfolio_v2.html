@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Gawande | Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top transition-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">YG.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-start">
+            <h1 class="display-1 fw-bold main-title">HELLO<br>WORLD.</h1>
+            <p class="lead mt-3 tech-text text-muted" style="color: #ced4da !important;">I'm Yash Gawande, an AI & Data Science Student.</p>
+            <div class="social-links mt-5">
+                <a href="https://github.com/ya5h8" target="_blank" class="text-white me-4"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://linkedin.com/in/yashgawande" target="_blank" class="text-white"><i class="bi bi-linkedin fs-3"></i></a>
+            </div>
+        </div>
+        <div id="p5-canvas-container"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-alt">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div id="maze-container" class="maze-canvas shadow-lg"></div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About Me</h2>
+                    <p class="text-secondary" style="color: #ffffff !important;">I am a passionate AI and Data Science student currently pursuing my B.Tech at P. R. Pote Patil College of Engineering and Management. I have a strong foundation in software development and data-driven solutions.</p>
+                    <p class="text-secondary" style="color: #ffffff !important;">With experience in full-stack development and a growing interest in AI/ML, I thrive on building applications that solve real-world problems. My journey involves everything from tweaking Linux kernels to developing innovative healthcare solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-code-slash fs-1 text-primary mb-3"></i>
+                        <h4 class="h5">Languages</h4>
+                        <p class="small text-muted" style="color: #ced4da !important;">Java, JavaScript, Python</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-window fs-1 text-primary mb-3"></i>
+                        <h4 class="h5">Frontend</h4>
+                        <p class="small text-muted" style="color: #ced4da !important;">React, Tailwind CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-database fs-1 text-primary mb-3"></i>
+                        <h4 class="h5">Backend</h4>
+                        <p class="small text-muted" style="color: #ced4da !important;">Node.js, Express, MySQL, MongoDB, Firebase</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-card p-4 text-center">
+                        <i class="bi bi-gear-fill fs-1 text-primary mb-3"></i>
+                        <h4 class="h5">Tools</h4>
+                        <p class="small text-muted" style="color: #ced4da !important;">Git, GitHub, Postman, Google Colab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item mb-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5 class="fw-bold mb-0">JUNE 2023 - JULY 2023</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <h4 class="h5 fw-bold">Intern – Compilers Technologies, Amravati</h4>
+                            <p class="text-muted" style="color: #ced4da !important;">Completed hands-on internship in Advanced Java. Worked with Java Swing, JDBC, Servlets, JSP, HTML, and CSS. Developed database-driven applications using JDBC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5 class="fw-bold mb-0">Nov 2025 - Present</h5>
+                        </div>
+                        <div class="col-md-9">
+                            <h4 class="h5 fw-bold">Freelance Web Developer</h4>
+                            <p class="text-muted" style="color: #ced4da !important;">Developed a smart e-commerce web application (apnashop.shop) using React, Node.js, and MySQL. Integrated Firebase Admin Authentication with JWT-based authorization. Built RESTful APIs for products, carts, and orders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="project-card card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">MediRoots</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">Smart Healthcare Assistant</h6>
+                            <p class="card-text small" style="color: #ced4da !important;">Voice-enabled Android app using Gemini API and ML Kit for prescription scanning and AI health coaching.</p>
+                            <span class="badge bg-dark">Kotlin</span>
+                            <span class="badge bg-dark">Gemini API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="project-card card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">RailBhoomi</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">Complaint Management System</h6>
+                            <p class="card-text small" style="color: #ced4da !important;">MERN stack multilingual system for railway passengers with AI/NLP based complaint classification.</p>
+                            <span class="badge bg-dark">Node.js</span>
+                            <span class="badge bg-dark">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="project-card card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Blood Donor System</h5>
+                            <h6 class="card-subtitle mb-2 text-muted small">Donor Finding Platform</h6>
+                            <p class="card-text small" style="color: #ced4da !important;">A centralized platform connecting blood donors and recipients using PHP and MySQL.</p>
+                            <span class="badge bg-dark">PHP</span>
+                            <span class="badge bg-dark">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-black text-center">
+        <div class="container">
+            <h2 class="contact-header mb-5">Contact Me</h2>
+            
+            <div class="row g-5 mt-5">
+                <div class="col-md-4">
+                    <i class="bi bi-house-door contact-icon"></i>
+                    <p class="contact-label">Amravati, Maharashtra, India</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-envelope-at contact-icon"></i>
+                    <p class="contact-label">yashgawande47@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-telephone contact-icon"></i>
+                    <p class="contact-label">+91 9510103408</p>
+                </div>
+            </div>
+
+            <div class="contact-divider"></div>
+            
+            <div class="bold-quote-container py-4">
+                <h3 class="bold-quote">Stay bold & have a wondrous friday</h3>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="social-footer d-flex justify-content-center gap-4 mb-4">
+                <a href="https://github.com/ya5h8" target="_blank" class="social-footer-link"><i class="bi bi-github"></i></a>
+                <a href="https://instagram.com/yashgawande" target="_blank" class="social-footer-link"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com/in/yashgawande" target="_blank" class="social-footer-link"><i class="bi bi-linkedin"></i></a>
+                <a href="https://facebook.com/yashgawande" target="_blank" class="social-footer-link"><i class="bi bi-facebook"></i></a>
+            </div>
+
+            <p class="footer-credits">Designed and developed by Yash Gawande</p>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
