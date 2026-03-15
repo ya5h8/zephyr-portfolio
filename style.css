@@ -492,6 +492,32 @@ nav.on::after {
   color: var(--acc);
 }
 
+.btn-cv {
+  font-family: var(--mono);
+  font-size: .85rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: 1.1rem 2.6rem;
+  background: rgba(200, 245, 62, 0.05);
+  color: var(--acc);
+  text-decoration: none;
+  border: 1px solid rgba(200, 245, 62, 0.2);
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.btn-cv:hover {
+  background: rgba(200, 245, 62, 0.1);
+  border-color: var(--acc);
+  transform: translateY(-2px);
+}
+
+.btn-cv i {
+  font-size: 1.1rem;
+}
+
 .h-corner {
   position: absolute;
   bottom: 8vh;
@@ -1637,4 +1663,97 @@ body::after {
   pointer-events: none;
   z-index: 8000;
   opacity: 0.35;
+}
+
+/* ── RESUME SECTION ── */
+.cv-grid {
+  margin-top: 6rem;
+  max-width: 700px;
+}
+
+.cv-card {
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  padding: 3rem;
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--acc);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .4s ease;
+}
+
+.cv-card:hover {
+  border-color: rgba(200, 245, 62, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cv-card:hover::before {
+  transform: scaleX(1);
+}
+
+.cv-top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cv-icon {
+  font-size: 3.5rem;
+  color: var(--acc);
+}
+
+.cv-info h3 {
+  font-family: var(--disp);
+  font-size: 1.8rem;
+  color: var(--ink);
+  margin-bottom: .4rem;
+}
+
+.cv-info p {
+  font-family: var(--mono);
+  font-size: .8rem;
+  color: var(--mid);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.cv-body p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(240, 237, 232, 0.6);
+  margin-bottom: 2.5rem;
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 2.8rem;
+}
+
+@media(max-width: 600px) {
+  .cv-card {
+    padding: 2rem;
+  }
+  .cv-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .cv-info h3 {
+    font-size: 1.4rem;
+  }
 }
